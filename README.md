@@ -7,9 +7,8 @@
 
 #### Table of contents
 * [The problem](#the-problem)
-* [Solution](#solution)
-* [Run the whole thing in 5 minutes](#run-the-whole-thing-in-5-minutes)
-* [Wanna learn more real-time ML?](#wanna-learn-more-real-time-ml)
+* [Solution](#example)
+* [Wanna learn Rust with me?](#wanna-learn-rust-with-me)
 
 
 ## The problem
@@ -19,7 +18,7 @@ Machine Learning systems are full of heavy compute operations, for example
 * to do **feature engineering**, and transform raw data into model features
 
 <div align="center">
-<img src="./media/feature_pipeline.jpg" width='350' />
+<img src="./media/feature_pipeline.jpg" width='450' />
 </div>
 
 * to **train ML models**, for example
@@ -27,13 +26,13 @@ Machine Learning systems are full of heavy compute operations, for example
     * a deep neural network for image classification, or
 
 <div align="center">
-<img src="./media/training_pipeline.jpg" width='350' />
+<img src="./media/training_pipeline.jpg" width='450' />
 </div>
 
 * to **generate predictions** from these models, for example to use Llama 3.1 to generate text completions.
 
 <div align="center">
-<img src="./media/inference_pipeline.jpg" width='350' />
+<img src="./media/inference_pipeline.jpg" width='450' />
 </div>
 
 And the thing is, Python is a VERY SLOW language.
@@ -46,13 +45,13 @@ However, this combo Python + C is not ideal for many real-world scenarios where 
 
 This is why 2 languages are growing in importance in the ML world,
 
-- Mojo, which is still in a very early stage. Its mission is incredibly exciting: blend the expressiveness of Python with the performance of C into a single language. 
+- [Mojo](https://www.modular.com/mojo), which is still in a very early stage. Its mission is incredibly exciting: blend the expressiveness of Python with the performance of C into a single language. 
 
   It has a growing community that will surely push it very far. However, at the moment, it is still far to compete with Python for most real-world problems.
 
 and
 
-- Rust, which is a modern compiled language, that is already used to power popular Python libraries like Polars or tokenizers. Rust syntax is more involved than Python, but still way more accessible than C or C++, especially when using an AI coding assistant.
+- [Rust](https://www.rust-lang.org/), which is a modern compiled language, that is already used to power popular Python libraries like Polars or tokenizers. Rust syntax is more involved than Python, but still way more accessible than C or C++, especially when using an AI coding assistant.
 
 In this repository I will focus exclusively on Rust, to show you its power with one very simple example.
 
